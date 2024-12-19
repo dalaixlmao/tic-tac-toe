@@ -41,6 +41,8 @@ int main()
         game->displayBoard();
         if (game->checkWin() != "none" || game->getMoveNumber() == 9)
         {
+            if(game->checkWin()=="DRAW")
+            cout<<"DRAW"<<endl;
             game->displayGameStatus();
             return 0;
         }

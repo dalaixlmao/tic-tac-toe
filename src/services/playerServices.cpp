@@ -28,7 +28,7 @@ player *playerServices::getPlayerByPiece(char c)
     if (c == 'x')
         return gameBoard->getPlayer1();
     else
-        gameBoard->getPlayer2();
+        return gameBoard->getPlayer2();
 }
 
 bool playerServices::isWinning(char c)
